@@ -148,7 +148,7 @@
               Dərs 1 — Natural Ədədlər
             </h1>
             <p class="text-slate-400 text-sm mt-1" data-i18n="subtitle">
-              Buraxılış imtahanına hazırlıq · 10 slayd · 113 test
+              Buraxılış imtahanına hazırlıq · 11 slayd · 113 test
             </p>
           </div>
           <div class="flex gap-2">
@@ -220,7 +220,7 @@
           <div class="flex justify-between items-center mb-4">
             <div class="text-sm text-slate-400">
               <span data-i18n="slide">Slayd</span>
-              <span id="slideNum">1</span> / 10
+              <span id="slideNum">1</span> / <span id="slideTotal">11</span>
             </div>
             <div class="flex gap-2">
               <button
@@ -377,7 +377,7 @@
               class="trainer-type active px-4 py-2 bg-blue-600 rounded-lg text-sm"
               data-type="divisors"
             >
-              Dəlil tap
+              Bölən tap
             </button>
             <button
               class="trainer-type px-4 py-2 bg-slate-700 rounded-lg text-sm"
@@ -622,7 +622,7 @@
       const i18n = {
         az: {
           title: "Dərs 1 — Natural Ədədlər",
-          subtitle: "Buraxılış imtahanına hazırlıq · 10 slayd · 113 test",
+          subtitle: "Buraxılış imtahanına hazırlıq · 11 slayd · 113 test",
           tab_theory: "Nəzəriyyə",
           tab_algo: "Alqoritm",
           tab_tests: "Testlər",
@@ -671,7 +671,7 @@
         ru: {
           title: "Урок 1 — Натуральные числа",
           subtitle:
-            "Подготовка к выпускному экзамену · 10 слайдов · 113 тестов",
+            "Подготовка к выпускному экзамену · 11 слайдов · 113 тестов",
           tab_theory: "Теория",
           tab_algo: "Алгоритм",
           tab_tests: "Тесты",
@@ -719,7 +719,7 @@
         },
         en: {
           title: "Lesson 1 — Natural Numbers",
-          subtitle: "Graduation exam preparation · 10 slides · 113 tests",
+          subtitle: "Graduation exam preparation · 11 slides · 113 tests",
           tab_theory: "Theory",
           tab_algo: "Algorithm",
           tab_tests: "Tests",
@@ -785,8 +785,8 @@
         },
         {
           az: {
-            title: "Dəlil və qat",
-            content: `<p class="mb-3"><b>Dəlil:</b> Əgər <span class="math-formula">a</span> natural ədədi <span class="math-formula">b</span> natural ədədinə qalıqsız bölünürsə, <span class="math-formula">a</span> ədədi <span class="math-formula">b</span>-nin <b>dəlidir</b>.</p><p class="mb-3"><b>Qat:</b> <span class="math-formula">b</span> ədədi <span class="math-formula">a</span>-nın <b>qatıdır</b>.</p><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> 12-nin dəhilləri: 1, 2, 3, 4, 6, 12<br>12-nin qatları: 12, 24, 36, 48, 60, ...</div>`,
+            title: "Bölən və bölünən",
+            content: `<p class="mb-3"><b>Bölən:</b> Əgər <span class="math-formula">a</span> natural ədədi <span class="math-formula">b</span> natural ədədinə qalıqsız bölünürsə, <span class="math-formula">a</span> ədədi <span class="math-formula">b</span>-nin <b>bölənidir</b>.</p><p class="mb-3"><b>Bölünən:</b> <span class="math-formula">b</span> ədədi <span class="math-formula">a</span>-nın <b>bölünənidir</b>.</p><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> 12-nin bölənləri: 1, 2, 3, 4, 6, 12<br>12-nin bölünənləri: 12, 24, 36, 48, 60, ...</div>`,
           },
           ru: {
             title: "Делитель и кратное",
@@ -799,7 +799,7 @@
         },
         {
           az: {
-            title: "Delilik əlamətləri",
+            title: "Bölünmə əlamətləri",
             content: `<div class="grid md:grid-cols-2 gap-3 text-sm"><div class="p-3 bg-slate-800 rounded-lg"><b>2-yə:</b> son rəqəmi cütdür (0,2,4,6,8)</div><div class="p-3 bg-slate-800 rounded-lg"><b>3-ə:</b> rəqəmləri cəmi 3-ə bölünür</div><div class="p-3 bg-slate-800 rounded-lg"><b>5-ə:</b> son rəqəmi 0 və ya 5-dir</div><div class="p-3 bg-slate-800 rounded-lg"><b>9-a:</b> rəqəmləri cəmi 9-a bölünür</div><div class="p-3 bg-slate-800 rounded-lg"><b>10-a:</b> son rəqəmi 0-dır</div><div class="p-3 bg-slate-800 rounded-lg"><b>4-ə:</b> son iki rəqəmi 4-ə bölünür</div></div>`,
           },
           ru: {
@@ -814,7 +814,7 @@
         {
           az: {
             title: "Sadə və mürəkkəb ədədlər",
-            content: `<p class="mb-3"><b>Sadə ədəd</b> — yalnız 1-ə və özünə bölünən, 1-dən böyük natural ədəddir.</p><p class="mb-3"><b>Mürəkkəb ədəd</b> — 1-dən və özündən başqa dəhilləri olan natural ədəddir.</p><div class="p-3 bg-yellow-900/30 rounded-lg text-sm my-3"><b>İlk sadə ədədlər:</b> 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, ...</div><p class="text-sm">1 nə sadə, nə də mürəkkəb ədəddir.</p>`,
+            content: `<p class="mb-3"><b>Sadə ədəd</b> — yalnız 1-ə və özünə bölünən, 1-dən böyük natural ədəddir.</p><p class="mb-3"><b>Mürəkkəb ədəd</b> — 1-dən və özündən başqa bölənləri olan natural ədəddir.</p><div class="p-3 bg-yellow-900/30 rounded-lg text-sm my-3"><b>İlk sadə ədədlər:</b> 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, ...</div><p class="text-sm">1 nə sadə, nə də mürəkkəb ədəddir.</p>`,
           },
           ru: {
             title: "Простые и составные числа",
@@ -842,7 +842,7 @@
         {
           az: {
             title: "ƏBOB — Ən Böyük Ortaq Bölən",
-            content: `<p class="mb-3"><b>ƏBOB(a,b)</b> — iki və ya daha çox ədədin <b>ən böyük ortaq dəlili</b>.</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3"><b>Qayda:</b> Sadə vuruqlara ayırıb, <u>ortaq</u> sadə vuruqları <u>ən kiçik qüvvətlə</u> vururuq.</div><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> ƏBOB(12, 18)<br>12 = 2² · 3<br>18 = 2 · 3²<br>ƏBOB = 2 · 3 = <b>6</b></div>`,
+            content: `<p class="mb-3"><b>ƏBOB(a,b)</b> — iki və ya daha çox ədədin <b>ən böyük ortaq böləni</b>.</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3"><b>Qayda:</b> Sadə vuruqlara ayırıb, <u>ortaq</u> sadə vuruqları <u>ən kiçik qüvvətlə</u> vururuq.</div><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> ƏBOB(12, 18)<br>12 = 2² · 3<br>18 = 2 · 3²<br>ƏBOB = 2 · 3 = <b>6</b></div>`,
           },
           ru: {
             title: "НОД — Наибольший общий делитель",
@@ -855,8 +855,8 @@
         },
         {
           az: {
-            title: "ƏKOB — Ən Kiçik Ortaq Qat",
-            content: `<p class="mb-3"><b>ƏKOB(a,b)</b> — iki və ya daha çox ədədin <b>ən kiçik ortaq qatı</b>.</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3"><b>Qayda:</b> Bütün sadə vuruqları (ortaq və qalan) <u>ən böyük qüvvətlə</u> vururuq.</div><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> ƏKOB(12, 18)<br>12 = 2² · 3<br>18 = 2 · 3²<br>ƏKOB = 2² · 3² = <b>36</b></div><p class="text-sm mt-3">Düstur: <span class="math-formula">ƏBOB(a,b) · ƏKOB(a,b) = a · b</span></p>`,
+            title: "ƏKOB — Ən Kiçik Ortaq Bölünən",
+            content: `<p class="mb-3"><b>ƏKOB(a,b)</b> — iki və ya daha çox ədədin <b>ən kiçik ortaq bölünəni</b>.</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3"><b>Qayda:</b> Bütün sadə vuruqları (ortaq və qalan) <u>ən böyük qüvvətlə</u> vururuq.</div><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> ƏKOB(12, 18)<br>12 = 2² · 3<br>18 = 2 · 3²<br>ƏKOB = 2² · 3² = <b>36</b></div><p class="text-sm mt-3">Düstur: <span class="math-formula">ƏBOB(a,b) · ƏKOB(a,b) = a · b</span></p>`,
           },
           ru: {
             title: "НОК — Наименьшее общее кратное",
@@ -865,6 +865,20 @@
           en: {
             title: "LCM — Least Common Multiple",
             content: `<p class="mb-3"><b>LCM(a,b)</b> — the <b>least common multiple</b> of two or more numbers.</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3"><b>Rule:</b> Take all prime factors (common and remaining) with <u>largest exponents</u>.</div><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Example:</b> LCM(12, 18)<br>12 = 2² · 3<br>18 = 2 · 3²<br>LCM = 2² · 3² = <b>36</b></div><p class="text-sm mt-3">Formula: <span class="math-formula">GCD(a,b) · LCM(a,b) = a · b</span></p>`,
+          },
+        },
+        {
+          az: {
+            title: "ƏBOB və ƏKOB əlaqəsi",
+            content: `<p class="mb-3">İki ədədin <b>ƏBOB</b>-u və <b>ƏKOB</b>-u aşağıdakı düsturla bağlıdır:</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3 text-center"><span class="math-formula text-lg">ƏBOB(a,b) · ƏKOB(a,b) = a · b</span></div><p class="mb-3">Buradan <b>ƏKOB</b>-u tapmaq üçün əlverişli düstur alınır:</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3 text-center"><span class="math-formula text-lg">ƏKOB(a,b) = (a · b) / ƏBOB(a,b)</span></div><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> a=12, b=18 üçün<br>ƏBOB(12,18) = 6<br>ƏKOB(12,18) = (12 · 18) / 6 = 216 / 6 = <b>36</b></div><p class="text-sm">Bu üsul böyük ədədlər üçün sadə vuruqlara ayırmadan daha sürətlidir.</p>`,
+          },
+          ru: {
+            title: "Связь НОД и НОК",
+            content: `<p class="mb-3">НОД и НОК двух чисел связаны следующей формулой:</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3 text-center"><span class="math-formula text-lg">НОД(a,b) · НОК(a,b) = a · b</span></div><p class="mb-3">Отсюда получаем удобную формулу для нахождения НОК:</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3 text-center"><span class="math-formula text-lg">НОК(a,b) = (a · b) / НОД(a,b)</span></div><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Пример:</b> для a=12, b=18<br>НОД(12,18) = 6<br>НОК(12,18) = (12 · 18) / 6 = 216 / 6 = <b>36</b></div><p class="text-sm">Этот способ быстрее, чем разложение на простые множители, для больших чисел.</p>`,
+          },
+          en: {
+            title: "Relationship between GCD and LCM",
+            content: `<p class="mb-3">The GCD and LCM of two numbers are related by the formula:</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3 text-center"><span class="math-formula text-lg">GCD(a,b) · LCM(a,b) = a · b</span></div><p class="mb-3">This gives a convenient formula for finding LCM:</p><div class="p-3 bg-blue-900/30 rounded-lg text-sm my-3 text-center"><span class="math-formula text-lg">LCM(a,b) = (a · b) / GCD(a,b)</span></div><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Example:</b> for a=12, b=18<br>GCD(12,18) = 6<br>LCM(12,18) = (12 · 18) / 6 = 216 / 6 = <b>36</b></div><p class="text-sm">This method is faster than prime factorization for large numbers.</p>`,
           },
         },
         {
@@ -883,8 +897,8 @@
         },
         {
           az: {
-            title: "Dəlillərin sayı",
-            content: `<p class="mb-3">Əgər <span class="math-formula">n = p₁ᵃ¹ · p₂ᵃ² · ... · pₖᵃᵏ</span> olarsa, dəhillərinin sayı:</p><p class="math-formula text-xl text-center my-4 text-blue-300">τ(n) = (a₁+1)(a₂+1)...(aₖ+1)</p><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> 60 = 2² · 3¹ · 5¹<br>τ(60) = (2+1)(1+1)(1+1) = 3·2·2 = <b>12</b></div><p class="text-sm">60-ın 12 dəhili var.</p>`,
+            title: "Bölənlərin sayı",
+            content: `<p class="mb-3">Əgər <span class="math-formula">n = p₁ᵃ¹ · p₂ᵃ² · ... · pₖᵃᵏ</span> olarsa, bölənlərinin sayı:</p><p class="math-formula text-xl text-center my-4 text-blue-300">τ(n) = (a₁+1)(a₂+1)...(aₖ+1)</p><div class="p-3 bg-green-900/30 rounded-lg text-sm my-3"><b>Misal:</b> 60 = 2² · 3¹ · 5¹<br>τ(60) = (2+1)(1+1)(1+1) = 3·2·2 = <b>12</b></div><p class="text-sm">60-ın 12 böləni var.</p>`,
           },
           ru: {
             title: "Количество делителей",
@@ -898,7 +912,7 @@
         {
           az: {
             title: "Tətbiq məsələləri",
-            content: `<p class="mb-3"><b>Nümunə 1.</b> 24 və 36-nın ƏBOB və ƏKOB-nu tapın.</p><div class="p-2 bg-slate-800 rounded text-sm mb-3">24 = 2³ · 3, 36 = 2² · 3²<br>ƏBOB = 2² · 3 = 12<br>ƏKOB = 2³ · 3² = 72</div><p class="mb-3"><b>Nümunə 2.</b> 100-ə qədər neçə sadə ədəd var?</p><div class="p-2 bg-slate-800 rounded text-sm mb-3">Cavab: <b>25</b> sadə ədəd</div><p class="mb-3"><b>Nümunə 3.</b> 144-ün neçə natural dəhili var?</p><div class="p-2 bg-slate-800 rounded text-sm">144 = 2⁴ · 3² → τ = 5·3 = <b>15</b></div>`,
+            content: `<p class="mb-3"><b>Nümunə 1.</b> 24 və 36-nın ƏBOB və ƏKOB-nu tapın.</p><div class="p-2 bg-slate-800 rounded text-sm mb-3">24 = 2³ · 3, 36 = 2² · 3²<br>ƏBOB = 2² · 3 = 12<br>ƏKOB = 2³ · 3² = 72</div><p class="mb-3"><b>Nümunə 2.</b> 100-ə qədər neçə sadə ədəd var?</p><div class="p-2 bg-slate-800 rounded text-sm mb-3">Cavab: <b>25</b> sadə ədəd</div><p class="mb-3"><b>Nümunə 3.</b> 144-ün neçə natural böləni var?</p><div class="p-2 bg-slate-800 rounded text-sm">144 = 2⁴ · 3² → τ = 5·3 = <b>15</b></div>`,
           },
           ru: {
             title: "Примеры задач",
@@ -951,7 +965,7 @@
         },
         {
           q: {
-            az: "12-nin neçə natural dəhili var?",
+            az: "12-nin neçə natural böləni var?",
             ru: "Сколько натуральных делителей у 12?",
             en: "How many natural divisors does 12 have?",
           },
@@ -1077,7 +1091,7 @@
         },
         {
           q: {
-            az: "1-in dəhillərinin sayı:",
+            az: "1-in bölənlərinin sayı:",
             ru: "Количество делителей 1:",
             en: "Number of divisors of 1:",
           },
@@ -1088,7 +1102,7 @@
           },
           a: 1,
           e: {
-            az: "1-in yalnız 1 dəhili var: 1",
+            az: "1-in yalnız 1 böləni var: 1",
             ru: "У 1 только один делитель: 1",
             en: "1 has only one divisor: 1",
           },
@@ -1113,7 +1127,7 @@
         },
         {
           q: {
-            az: "144-ün neçə natural dəhili var?",
+            az: "144-ün neçə natural böləni var?",
             ru: "Сколько натуральных делителей у 144?",
             en: "How many natural divisors does 144 have?",
           },
@@ -1267,7 +1281,7 @@
         },
         {
           q: {
-            az: "18-in dəhilləri neçədir?",
+            az: "18-in bölənləri neçədir?",
             ru: "Сколько делителей у 18?",
             en: "How many divisors does 18 have?",
           },
@@ -1443,7 +1457,7 @@
         },
         {
           q: {
-            az: "50-nin neçə natural dəhili var?",
+            az: "50-nin neçə natural böləni var?",
             ru: "Сколько натуральных делителей у 50?",
             en: "How many natural divisors does 50 have?",
           },
@@ -1601,7 +1615,7 @@
         },
         {
           q: {
-            az: "80-in neçə natural dəhili var?",
+            az: "80-in neçə natural böləni var?",
             ru: "Сколько натуральных делителей у 80?",
             en: "How many natural divisors does 80 have?",
           },
@@ -1723,7 +1737,7 @@
         },
         {
           q: {
-            az: "360-ın neçə natural dəhili var?",
+            az: "360-ın neçə natural böləni var?",
             ru: "Сколько натуральных делителей у 360?",
             en: "How many natural divisors does 360 have?",
           },
@@ -1863,7 +1877,7 @@
         },
         {
           q: {
-            az: "72-nin dəhilləri cəmi:",
+            az: "72-nin bölənləri cəmi:",
             ru: "Сумма делителей 72:",
             en: "Sum of divisors of 72:",
           },
@@ -2063,7 +2077,7 @@
         },
         {
           q: {
-            az: "200-ün neçə natural dəhili var?",
+            az: "200-ün neçə natural böləni var?",
             ru: "Сколько натуральных делителей у 200?",
             en: "How many natural divisors does 200 have?",
           },
@@ -2221,7 +2235,7 @@
         },
         {
           q: {
-            az: "720-nin neçə natural dəhili var?",
+            az: "720-nin neçə natural böləni var?",
             ru: "Сколько натуральных делителей у 720?",
             en: "How many natural divisors does 720 have?",
           },
@@ -2380,7 +2394,7 @@
         },
         {
           q: {
-            az: "900-ün neçə natural dəhili var?",
+            az: "900-ün neçə natural böləni var?",
             ru: "Сколько натуральных делителей у 900?",
             en: "How many natural divisors does 900 have?",
           },
@@ -2434,7 +2448,7 @@
         },
         {
           q: {
-            az: "Ədədin bütün dəhillərinin cəmi düsturu (σ):",
+            az: "Ədədin bütün bölənlərinin cəmi düsturu (σ):",
             ru: "Формула суммы всех делителей (σ):",
             en: "Formula for sum of all divisors (σ):",
           },
@@ -2467,7 +2481,7 @@
         },
         {
           q: {
-            az: "Mükəmməl ədəd — dəhillərinin cəmi ədədin özünə bərabərdir. İlk mükəmməl ədəd:",
+            az: "Mükəmməl ədəd — bölənlərinin cəmi ədədin özünə bərabərdir. İlk mükəmməl ədəd:",
             ru: "Совершенное число — сумма делителей равна самому числу. Первое совершенное:",
             en: "Perfect number — sum of divisors equals the number. First perfect number:",
           },
@@ -2577,7 +2591,7 @@
         },
         {
           q: {
-            az: "Ədəd kvadratdırsa, dəhillərinin sayı:",
+            az: "Ədəd kvadratdırsa, bölənlərinin sayı:",
             ru: "Если число — квадрат, количество делителей:",
             en: "If a number is a square, number of divisors:",
             en: "If a number is a square, number of divisors:",
@@ -3099,7 +3113,7 @@
         },
         {
           q: {
-            az: "n=2⁴·3²·5², dəhillərinin cəmi σ(n)=?",
+            az: "n=2⁴·3²·5², bölənlərinin cəmi σ(n)=?",
             ru: "Если n=2⁴·3²·5², сумма делителей σ(n)=?",
             en: "If n=2⁴·3²·5², sum of divisors σ(n)=?",
           },
@@ -3379,8 +3393,8 @@
         },
         {
           az: {
-            t: "Dəlil və qat anlayışlarını öyrən",
-            d: "Dəlil, qat və onların xassələri",
+            t: "Bölən və bölünən anlayışlarını öyrən",
+            d: "Bölən, bölünən və onların xassələri",
           },
           ru: {
             t: "Изучите понятия делителя и кратного",
@@ -3393,7 +3407,7 @@
         },
         {
           az: {
-            t: "Delilik əlamətlərini öyrən",
+            t: "Bölünmə əlamətlərini öyrən",
             d: "2, 3, 5, 9, 10-a bölünmə",
           },
           ru: {
@@ -3436,7 +3450,7 @@
         {
           az: {
             t: "ƏBOB və ƏKOB hesablayın",
-            d: "Ən Böyük Ortaq Bölən və Ən Kiçik Ortaq Qat",
+            d: "Ən Böyük Ortaq Bölən və Ən Kiçik Ortaq Bölünən",
           },
           ru: {
             t: "Вычисляйте НОД и НОК",
@@ -3449,7 +3463,7 @@
         },
         {
           az: {
-            t: "Dəlillərin sayını hesablayın",
+            t: "Bölənlərin sayını hesablayın",
             d: "τ(n) düsturunu tətbiq edin",
           },
           ru: {
@@ -3524,6 +3538,7 @@
       function renderSlides() {
         const c = document.getElementById("slidesContainer");
         c.innerHTML = "";
+        document.getElementById("slideTotal").textContent = slides.length;
         slides.forEach((s, i) => {
           const div = document.createElement("div");
           div.className = "slide" + (i === 0 ? " active" : "");
@@ -3813,7 +3828,7 @@
           for (let i = 1; i <= a; i++) if (a % i === 0) divs.push(i);
           q.textContent =
             currentLang === "az"
-              ? `${a} ədədinin neçə natural dəhili var?`
+              ? `${a} ədədinin neçə natural böləni var?`
               : currentLang === "ru"
                 ? `Сколько натуральных делителей у ${a}?`
                 : `How many natural divisors does ${a} have?`;
